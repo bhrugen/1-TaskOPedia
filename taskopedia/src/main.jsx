@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-
+import "./style.css";
 const root = createRoot(document.getElementById("root"));
 const pageStyle = {
   textAlign: "center",
@@ -10,7 +10,7 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <p>We are super excited to learn React</p>
+      <p className="customHeading">We are super excited to learn React</p>
       <Footer />
     </div>
   );
