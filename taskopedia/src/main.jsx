@@ -15,7 +15,7 @@ function HomePage() {
 function Header() {
   return (
     <div>
-      <h1>Welcome to the React Course!</h1>
+      <h1 style={{ textAlign: "center" }}>Welcome to the React Course!</h1>
     </div>
   );
 }
