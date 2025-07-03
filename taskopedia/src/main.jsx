@@ -1,14 +1,11 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
+import logo from "./images/react.png";
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
 const lectureCount = 11;
 const isActive = true;
-const pageStyle = {
-  textAlign: "center",
-  backgroundColor: "lightgray",
-  padding: "10px",
-};
+
 function HomePage() {
   return (
     <div>
@@ -34,10 +31,10 @@ function HomePage() {
 
 function Header() {
   return (
-    <div>
-      <h1 style={pageStyle} className="text-success">
-        Welcome to the React Course!
-      </h1>
+    <div className="pt-1 text-center">
+      <img src={logo} style={{ width: "30px" }}></img>
+      <span className="text-success"> Welcome to the React Course!</span>
+      <hr />
     </div>
   );
 }
