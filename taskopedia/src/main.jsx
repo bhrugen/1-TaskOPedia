@@ -19,7 +19,9 @@ function HomePage() {
 function Header() {
   return (
     <div>
-      <h1 style={pageStyle}>Welcome to the React Course!</h1>
+      <h1 style={pageStyle} className="text-success">
+        Welcome to the React Course!
+      </h1>
     </div>
   );
 }
