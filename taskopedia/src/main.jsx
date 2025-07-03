@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
 const root = createRoot(document.getElementById("root"));
+const courseName = "React";
 const pageStyle = {
   textAlign: "center",
   backgroundColor: "lightgray",
@@ -11,6 +12,13 @@ function HomePage() {
     <div>
       <Header />
       <p className="customHeading">We are super excited to learn React</p>
+      <h3>Topics to learn in {courseName} Course</h3>
+      <ul>
+        <li>JSX</li>
+        <li>Components</li>
+        <li>Routing</li>
+        <li>State Managment</li>
+      </ul>
       <Footer />
     </div>
   );
