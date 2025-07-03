@@ -3,7 +3,7 @@ import "./style.css";
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
 const lectureCount = 11;
-const isActive = false;
+const isActive = true;
 const pageStyle = {
   textAlign: "center",
   backgroundColor: "lightgray",
@@ -23,6 +23,10 @@ function HomePage() {
         <li>Routing</li>
         <li>State Managment</li>
       </ul>
+      <div>
+        Enter Task :{" "}
+        <input type="text" maxLength={6} disabled={isActive}></input>
+      </div>
       <Footer />
     </div>
   );
