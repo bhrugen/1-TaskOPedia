@@ -2,6 +2,8 @@ import { createRoot } from "react-dom/client";
 import "./style.css";
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
+const lectureCount = 11;
+const isActive = false;
 const pageStyle = {
   textAlign: "center",
   backgroundColor: "lightgray",
@@ -13,6 +15,8 @@ function HomePage() {
       <Header />
       <p className="customHeading">We are super excited to learn React</p>
       <h3>Topics to learn in {courseName} Course</h3>
+      <p> Lecture Count - {lectureCount}</p>
+      <p> Is Active : {isActive ? "Active" : "Inactive"}</p>
       <ul>
         <li>JSX</li>
         <li>Components</li>
