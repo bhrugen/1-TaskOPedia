@@ -1,7 +1,11 @@
 import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
-
+const pageStyle = {
+  textAlign: "center",
+  backgroundColor: "lightgray",
+  padding: "10px",
+};
 function HomePage() {
   return (
     <div>
@@ -15,7 +19,7 @@ function HomePage() {
 function Header() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Welcome to the React Course!</h1>
+      <h1 style={pageStyle}>Welcome to the React Course!</h1>
     </div>
   );
 }
