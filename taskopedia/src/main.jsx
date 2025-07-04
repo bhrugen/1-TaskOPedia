@@ -28,9 +28,9 @@ function HomePage() {
       </div>
       <hr />
       <h5 className="pt-2">Students Enrolled</h5>
-      <Students experience={2} />
-      <Students experience={5} />
-      <Students experience={3} />
+      <Students experience={2} name="Kris Walley" />
+      <Students experience={5} name="Ben Parker" />
+      <Students experience={3} name="Laura May" />
       <Footer />
     </div>
   );
