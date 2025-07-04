@@ -13,6 +13,7 @@ function Students(props) {
           <br />
           Coading Expereience {props.experience} years
         </div>
+        <div className="col-2">{props.children}</div>
       </div>
     </div>
   );

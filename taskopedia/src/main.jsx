@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
 import { Footer } from "./Layout/Footer";
+import StudentReview from "./StudentReivew";
 import Students from "./Students";
 import Header from "./Layout/Header";
 const root = createRoot(document.getElementById("root"));
@@ -28,7 +29,10 @@ function HomePage() {
       </div>
       <hr />
       <h5 className="pt-2">Students Enrolled</h5>
-      <Students experience={2} name="Kris Walley" />
+      <Students experience={2} name="Kris Walley">
+        <StudentReview />
+      </Students>
+
       <Students experience={5} name="Ben Parker" />
       <Students experience={3} name="Laura May" />
       <Footer />
