@@ -1,34 +1,12 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
 import { Footer } from "./Layout/Footer";
+import Students from "./Students";
 import Header from "./Layout/Header";
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
 const lectureCount = 11;
 const isActive = true;
-
-function Students() {
-  const fullName = "Kris Walley";
-  const programmingExp = 2;
-
-  return (
-    <div className="container p-4 bg-success my-3 rounded">
-      <div className="row border p-2">
-        <div className="col-2">
-          <img
-            src={`https://ui-avatars.com/api/?name=${fullName}`}
-            style={{ maxWidth: "50px" }}
-          ></img>
-        </div>
-        <div className="col-8">
-          {fullName}
-          <br />
-          Coading Expereience {programmingExp} years
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function HomePage() {
   return (
