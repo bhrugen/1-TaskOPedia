@@ -5,5 +5,5 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
+export { Footer };
+//export default Footer;

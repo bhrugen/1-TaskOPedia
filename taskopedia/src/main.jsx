@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
-import Footer from "./Layout/Footer";
+import { Footer } from "./Layout/Footer";
 import Header from "./Layout/Header";
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
