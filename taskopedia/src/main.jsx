@@ -26,7 +26,11 @@ function HomePage() {
         Enter Task :{" "}
         <input type="text" maxLength={6} disabled={isActive}></input>
       </div>
-      <Students />
+      <hr />
+      <h5 className="pt-2">Students Enrolled</h5>
+      <Students experience={2} />
+      <Students experience={5} />
+      <Students experience={3} />
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-function Students() {
+function Students(props) {
   const fullName = "Kris Walley";
   const programmingExp = 2;
 
@@ -14,7 +14,7 @@ function Students() {
         <div className="col-8">
           {fullName}
           <br />
-          Coading Expereience {programmingExp} years
+          Coading Expereience {props.experience} years
         </div>
       </div>
     </div>
