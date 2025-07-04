@@ -7,6 +7,24 @@ const courseName = "React";
 const lectureCount = 11;
 const isActive = true;
 
+function Students() {
+  const fullName = "Kris Walley";
+  const programmingExp = 2;
+
+  return (
+    <div className="container p-4 bg-success my-3 rounded">
+      <div className="row border">
+        <div className="col-2">IMAGE</div>
+        <div className="col-8">
+          {fullName}
+          <br />
+          Coading Expereience {programmingExp} years
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function HomePage() {
   return (
     <div>
@@ -25,6 +43,7 @@ function HomePage() {
         Enter Task :{" "}
         <input type="text" maxLength={6} disabled={isActive}></input>
       </div>
+      <Students />
       <Footer />
     </div>
   );
